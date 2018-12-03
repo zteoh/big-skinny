@@ -1,0 +1,74 @@
+<head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<div id="tester"></div>
+
+<!--
+<script>
+	TESTER = document.getElementById('tester');
+	Plotly.plot( TESTER, [{
+	x: [1, 2, 3, 4, 5],
+	y: [1, 2, 4, 8, 16] }], {
+	margin: { t: 0 } } );
+</script>
+-->
+
+<script>
+// Enter a speed between 0 and 180
+var level = 0;
+
+// Trig to calc meter point
+var degrees = 180 - level,
+     radius = .5;
+var radians = degrees * Math.PI / 180;
+var x = radius * Math.cos(radians);
+var y = radius * Math.sin(radians);
+
+// Path: may have to change to create a better triangle
+var mainPath = 'M -.0 -0.025 L .0 0.025 L ',
+     pathX = String(x),
+     space = ' ',
+     pathY = String(y),
+     pathEnd = ' Z';
+var path = mainPath.concat(pathX,space,pathY,pathEnd);
+
+var data = [{ type: 'scatter',
+   x: [0], y:[0],
+    marker: {size: 20, color:'850000'},
+    showlegend: false,
+    name: 'speed',
+    text: level,
+    hoverinfo: 'text+name'},
+  { values: [1, 1, 1, 1, 1],
+  rotation: 200,
+  textinfo: 'text',
+  marker: {colors:['rgba(14, 127, 0, .5)', 'rgba(110, 154, 22, .5)',
+                         'rgba(170, 202, 42, .5)', 'rgba(202, 209, 95, .5)',
+                         'rgba(210, 206, 145, .5)', 'rgba(232, 226, 202, .5)']},
+  labels: ['81-100', '61-80', '41-60', '21-40', '0-20', ''],
+  hoverinfo: 'label',
+  hole: .6,
+  type: 'pie',
+  showlegend: false
+}];
+
+var layout = {
+  shapes:[{
+      type: 'path',
+      path: path,
+      fillcolor: '850000',
+      line: {
+        color: '850000'
+      }
+    }],
+  height: 300,
+  width: 300,
+  xaxis: {zeroline:false, showticklabels:false,
+             showgrid: false, range: [-1, 1]},
+  yaxis: {zeroline:false, showticklabels:false,
+             showgrid: false, range: [-1, 1]}
+};
+
+Plotly.newPlot('tester', data, layout);
+</script>

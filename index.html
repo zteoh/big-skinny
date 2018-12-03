@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardiaction</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/javascript.js"></script>
+
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container grey lighten-4" id="title"><h4>Home</h4></div>
+        </header>
+
+        <div id="home-page" class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Welcome Back, John
+                                </div>
+                                <svg id="fillgauge" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.minValue = 0;
+                                    config.maxValue = 100;
+                                    config.displayPercent = true;
+                                    config.circleColor = "#6DA398";
+                                    config.textColor = "#0E5144";
+                                    config.waveTextColor = "#6DA398";
+                                    config.waveColor = "#246D5F";
+                                    config.circleThickness = 0.2;
+                                    config.textVertPosition = 0.2;
+                                    config.waveAnimateTime = 1000;
+                                    var gauge = loadLiquidFillGauge("fillgauge", 75, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Heart Rate
+                                </div>
+                                <svg id="fillgauge1" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.minValue = 0;
+                                    config.maxValue = 150;
+                                    config.circleColor = "#FF7777";
+                                    config.textColor = "#FF4444";
+                                    config.waveTextColor = "#FFAAAA";
+                                    config.waveColor = "#FFDDDD";
+                                    config.circleThickness = 0.2;
+                                    config.textVertPosition = 0.2;
+                                    config.waveAnimateTime = 1000;
+                                    config.displayPercent = false;
+                                    var gauge = loadLiquidFillGauge("fillgauge1", 100, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Water Intake
+                                </div>
+                                <svg id="fillgauge2" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.minValue = 0;
+                                    config.maxValue = 10;
+                                    config.displayPercent = false;
+                                    config.circleThickness = 0.15;
+                                    var gauge = loadLiquidFillGauge("fillgauge2", 6, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Steps
+                                </div>
+                                <svg id="fillgauge3" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config4 = liquidFillGaugeDefaultSettings();
+                                    config4.minValue = 0;
+                                    config4.maxValue = 10000;
+                                    config4.displayPercent = false;
+                                    config4.circleThickness = 0.15;
+                                    config4.circleColor = "#808015";
+                                    config4.textColor = "#555500";
+                                    config4.waveTextColor = "#FFFFAA";
+                                    config4.waveColor = "#AAAA39";
+                                    config4.textVertPosition = 0.8;
+                                    config4.waveAnimateTime = 1000;
+                                    config4.waveHeight = 0.05;
+                                    config4.waveAnimate = true;
+                                    config4.waveRise = false;
+                                    config4.waveHeightScaling = false;
+                                    config4.waveOffset = 0.25;
+                                    config4.textSize = 0.75;
+                                    config4.waveCount = 3;
+                                    var gauge = loadLiquidFillGauge("fillgauge3", 5500, config4);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Activity
+                                </div>
+                                <svg id="fillgauge4" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.circleThickness = 0.15;
+                                    config.circleColor = "#D4AB6A";
+                                    config.textColor = "#553300";
+                                    config.waveTextColor = "#805615";
+                                    config.waveColor = "#AA7D39";
+                                    config.waveAnimateTime = 5000;
+                                    config.waveHeight = 0.15;
+                                    config.waveAnimate = true;
+                                    config.waveOffset = 0.25;
+                                    config.displayPercent = false;
+                                    var gauge = loadLiquidFillGauge("fillgauge4", 30, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Sleep
+                                </div>
+                                <svg id="fillgauge5" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.minValue = 0;
+                                    config.maxValue = 8;
+                                    config.displayPercent = false;
+                                    config.circleColor = "#808080";
+                                    config.textColor = "#C0C0C0";
+                                    config.waveTextColor = "#808080";
+                                    config.waveColor = "#D3D3D3";
+                                    config.circleThickness = 0.2;
+                                    config.textVertPosition = 0.5;
+                                    config.waveAnimateTime = 1000;
+                                    var gauge = loadLiquidFillGauge("fillgauge5", 7, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="index.html">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-title center">
+                                    Calories
+                                </div>
+                                <svg id="fillgauge6" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <script language="JavaScript">
+                                    var config = liquidFillGaugeDefaultSettings();
+                                    config.minValue = 0;
+                                    config.maxValue = 2500;
+                                    config.displayPercent = false;
+                                    config.circleColor = "#6DA398";
+                                    config.textColor = "#0E5144";
+                                    config.waveTextColor = "#6DA398";
+                                    config.waveColor = "#246D5F";
+                                    config.circleThickness = 0.2;
+                                    config.textVertPosition = 0.5;
+                                    config.waveAnimateTime = 1000;
+                                    var gauge = loadLiquidFillGauge("fillgauge6", 750, config);
+                                </script>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+<ul class="sidenav" id="mobile-demo">
+<li><a href="sass.html">Home</a></li>
+<li><a href="badges.html">Health</a></li>
+<li><a href="collapsible.html">Resources</a></li>
+<li><a href="mobile.html">Settings</a></li>
+</ul>
+-->
+
+    </body>
+
+    <footer>
+        <nav class="grey lighten-4">
+            <div class="nav-wrapper">
+                <!--                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">*</i></a>-->
+                <ul class="center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="health.html">Health</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</html>

@@ -1,0 +1,129 @@
+/* General*/
+a {
+    color: black !important;
+}
+
+#title {
+    width: 100%;
+    padding: 5px 35px;
+}
+
+footer {
+    height: 100px;
+}
+
+nav {
+    height: 80px !important;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+nav ul {
+    height: 100%;
+}
+
+nav ul li {
+    width: 25%;
+    height: 100%;
+}
+
+nav ul li a{
+    color: black;
+    height: 100%;
+}
+
+.card .card-content {
+    width: 100%;
+}
+
+/*Home Page Specifics*/
+
+#home-page .card {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative;
+}
+
+#home-page .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*Resource Page Specifics*/
+
+#resources-page .card {
+    width: 100%;
+    padding-top: 40%; /* 1:1 Aspect Ratio */
+    position: relative;
+}
+
+#resources-page .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/*Health Page Specifics*/
+
+/*
+#health-page .card {
+    width: 100%;
+    padding-top: 100%;  1:1 Aspect Ratio 
+    position: relative;
+}
+*/
+
+/*
+#health-page .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+#health-page #no-padding {
+    padding: 0px;
+}
+
+#health-page #no-padding .card-title {
+    position: relative;
+    top: 70px;
+    z-index: 1;
+}
+
+/*Setting Page Specifics*/
+
+#settings-page .card {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative;
+}
+
+#settings-page .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*Ring Chart*/
+.progress-meter .background {
+  fill: #ccc;
+}
+
+.progress-meter .foreground {
+  fill: #000;
+}
+
+.progress-meter text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
