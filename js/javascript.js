@@ -132,7 +132,7 @@ function loadLiquidFillGauge(elementId, value, config) {
         .attr('transform','translate('+radius+','+textRiseScaleY(config.textVertPosition)+')');
 
     // The clipping wave area.
-    var clipArea = d3.svg.area()
+    var clipArea = d3.area()
         .x(function(d) { return waveScaleX(d.x); } )
         .y0(function(d) { return waveScaleY(Math.sin(Math.PI*2*config.waveOffset*-1 + Math.PI*2*(1-config.waveCount) + d.y*2*Math.PI));} )
         .y1(function(d) { return (fillCircleRadius*2 + waveHeight); } );
