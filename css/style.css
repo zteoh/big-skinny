@@ -4,8 +4,10 @@ a {
 }
 
 #title {
+    height: 150px;
     width: 100%;
-    padding: 5px 35px;
+    padding: 5px 80px;
+    margin-bottom:30px;
 }
 
 footer {
@@ -13,7 +15,7 @@ footer {
 }
 
 nav {
-    height: 80px !important;
+    height: 120px !important;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -29,6 +31,7 @@ nav ul li {
 }
 
 nav ul li a{
+    font-size: 1.75em;
     color: black;
     height: 100%;
 }
@@ -56,7 +59,7 @@ nav ul li a{
 
 #resources-page .card {
     width: 100%;
-    padding-top: 40%; /* 1:1 Aspect Ratio */
+    padding-top: 60%; /* 1:1 Aspect Ratio */
     position: relative;
 }
 
@@ -126,4 +129,6 @@ nav ul li a{
   font-size: 24px;
   font-weight: bold;
 }
+
+
 
