@@ -11,7 +11,7 @@
         <!--chart.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        
+
         <!-- Data Things -->
         <script src="js/heart-data.js"></script>
         <script src="js/steps-data.js"></script>
@@ -88,22 +88,22 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <div class="col s12">
                     <a href="index.html">
                         <div class="card">
                             <div class="card-content">
-                                <div class="card-title center"><h2>EKG Heart</h2></div>
+                                <div class="card-title center"><h2>EKG</h2></div>
                                 <canvas id="heart3-chart" height="300px"></canvas>
                                 <script>
                                     var ctx = document.getElementById("heart3-chart").getContext("2d");
-                                    var array = [...Array(250).keys()]
+                                    var array = [...Array(125).keys()]
                                     console.log(array)
                                     var data = {
                                         labels: array,
                                         datasets: [
                                             {
-                                                backgroundColor: "rgba(183,28,28,0.2)",
+                                                backgroundColor: "rgba(244,81,30,0.5)",
                                                 borderColor: "rgba(0,0,0,0.1)",
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
@@ -116,6 +116,16 @@
                                     var options= {
                                         legend: {
                                             display: false
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                ticks: {
+                                                    display: false
+                                                },
+                                                gridLines: {
+                                                    display: false
+                                                }
+                                            }]
                                         }
                                     }
 
@@ -127,7 +137,7 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <div class="col s12">
                     <a href="index.html">
                         <div class="card">
