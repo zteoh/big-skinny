@@ -1,10 +1,14 @@
 /* General*/
+h1 {
+    font-size: 6em !important;
+}
+
 a {
     color: black !important;
 }
 
 #title {
-    height: 150px;
+    height: 200px;
     width: 100%;
     padding: 5px 80px;
     margin-bottom:30px;
@@ -31,6 +35,7 @@ nav ul li {
 }
 
 nav ul li a{
+    padding-top: 20px;
     font-size: 1.75em;
     color: black;
     height: 100%;
