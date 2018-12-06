@@ -11,6 +11,11 @@
         <!--chart.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- Data Things -->
+        <script src="js/heart-data.js"></script>
+        <script src="js/steps-data.js"></script>
+        <script src="js/sleep-data.js"></script>
 
 
         <!-- Compiled and minified CSS -->
@@ -43,23 +48,23 @@
                                         datasets: [
                                             {
                                                 label: "Last Week",
-                                                backgroundColor: "rgba(220,220,220,0.2)",
+                                                backgroundColor: "rgba(183,28,28,0.2)",
                                                 borderColor: "rgba(0,0,0,0.1)",
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(220,220,220,1)",
-                                                data: [10, 15, 13, 17, 20, 15, 10]
+                                                data: last_week_heart
                                             },
                                             {
                                                 label: "This Week",
-                                                backgroundColor: "rgba(151,187,205,0.2)",
-                                                borderColor: "rgba(151,187,205,1)",
-                                                pointColor: "rgba(151,187,205,1)",
+                                                backgroundColor: "rgba(183,28,28,0.5)",
+                                                borderColor: "rgba(183,28,28,0.7)",
+                                                pointColor: "rgba(183,28,28,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
-                                                pointHighlightStroke: "rgba(151,187,205,1)",
-                                                data: [16, 5, 11, 9, 12, 9, 15]
+                                                pointHighlightStroke: "rgba(183,28,28,1)",
+                                                data: this_week_heart
                                             }
                                         ]
                                     };
@@ -95,23 +100,23 @@
                                         datasets: [
                                             {
                                                 label: "Last Week",
-                                                backgroundColor: "rgba(220,220,220,0.2)",
+                                                backgroundColor: "rgba(106,27,154, 0.2)",
                                                 borderColor: "rgba(0,0,0,0.1)",
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(220,220,220,1)",
-                                                data: [6.5, 5.9, 8.0, 8.1, 5.6, 5.5, 4.0]
+                                                data: last_week_sleep
                                             },
                                             {
                                                 label: "This Week",
-                                                backgroundColor: "rgba(151,187,205,0.2)",
+                                                backgroundColor: "rgba(106,27,154, 0.5)",
                                                 borderColor: "rgba(151,187,205,1)",
                                                 pointColor: "rgba(151,187,205,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(151,187,205,1)",
-                                                data: [2.8, 4.8, 4.0, 8.6, 8.6, 2.7, 9.0]
+                                                data: this_week_sleep
                                             }
                                         ]
                                     };
@@ -144,23 +149,23 @@
                                         datasets: [
                                             {
                                                 label: "Last Week",
-                                                backgroundColor: "rgba(220,220,220,0.2)",
+                                                backgroundColor: "rgba(0,121,107, 0.2)",
                                                 borderColor: "rgba(0,0,0,0.1)",
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(220,220,220,1)",
-                                                data: [6500, 5900, 8000, 8100, 5600, 5500, 4000]
+                                                data: last_week_step
                                             },
                                             {
                                                 label: "This Week",
-                                                backgroundColor: "rgba(151,187,205,0.2)",
+                                                backgroundColor: "rgba(0,121,107, 0.5)",
                                                 borderColor: "rgba(151,187,205,1)",
                                                 pointColor: "rgba(151,187,205,1)",
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(151,187,205,1)",
-                                                data: [2800, 4800, 4000, 8600, 8600, 2700, 9000]
+                                                data: this_week_step
                                             }
                                         ]
                                     };
@@ -186,7 +191,7 @@
                                         datasets: [
                                             {
                                                 label: "Last Week",
-                                                backgroundColor: ["rgba(255,0,0,0.2)", "rgba(0,0,255,0.2)", "rgba(255,255,0,0.2)"],
+                                                backgroundColor: ["rgba(229,57,53,0.3)", "rgba(21,101,192,0.3)", "rgba(255,202,40, 0.3)"],
                                                 borderColor: ["rgba(255,0,0,0.2)", "rgba(0,0,255,0.2)", "rgba(255,255,0,0.2)"],
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
@@ -196,7 +201,7 @@
                                             },
                                             {
                                                 label: "This Week",
-                                                backgroundColor: ["rgba(255,0,0,0.5)", "rgba(0,0,255,0.5)", "rgba(255,255,0,0.5)"],
+                                                backgroundColor: ["rgba(229,57,53,0.7)", "rgba(21,101,192,0.7)", "rgba(255,202,40, 0.7)"],
                                                 borderColor: ["rgba(255,0,0,0.5)", "rgba(0,0,255,0.5)", "rgba(255,255,0,0.5)"],
                                                 pointColor: "rgba(151,187,205,1)",
                                                 pointStrokeColor: "#fff",
@@ -228,7 +233,7 @@
                                         datasets: [
                                             {
                                                 label: "Last Week",
-                                                backgroundColor: "rgba(220,220,220,0.2)",
+                                                backgroundColor: "rgba(255,202,40, 0.2)",
                                                 borderColor: "rgba(0,0,0,0.1)",
                                                 pointColor: "rgba(220,220,220,1)",
                                                 pointStrokeColor: "#fff",
@@ -238,7 +243,7 @@
                                             },
                                             {
                                                 label: "This Week",
-                                                backgroundColor: "rgba(151,187,205,0.2)",
+                                                backgroundColor: "rgba(255,202,40, 0.5)",
                                                 borderColor: "rgba(151,187,205,1)",
                                                 pointColor: "rgba(151,187,205,1)",
                                                 pointStrokeColor: "#fff",

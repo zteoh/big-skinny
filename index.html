@@ -6,6 +6,9 @@
         <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/javascript.js"></script>
+        
+        <!-- Data things -->
+        <script src="js/heartrate-data.js"></script>
 
 
         <!-- Compiled and minified CSS -->
@@ -28,9 +31,9 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-title center">
-                                    Welcome Back, John
+                                    <h4>Welcome Back, John</h4>
                                 </div>
-                                <svg id="fillgauge" width="100%" onclick="gauge.update(NewValue());"></svg>
+                                <svg id="fillgauge" width="100%" height="200px" onclick="gauge.update(NewValue());"></svg>
                                 <script language="JavaScript">
                                     var config = liquidFillGaugeDefaultSettings();
                                     config.minValue = 0;
@@ -40,7 +43,7 @@
                                     config.textColor = "#0E5144";
                                     config.waveTextColor = "#6DA398";
                                     config.waveColor = "#246D5F";
-                                    config.circleThickness = 0.2;
+                                    config.circleThickness = 0.1;
                                     config.textVertPosition = 0.2;
                                     config.waveAnimateTime = 1000;
                                     var gauge = loadLiquidFillGauge("fillgauge", 75, config);
@@ -69,7 +72,7 @@
                                     config.textVertPosition = 0.2;
                                     config.waveAnimateTime = 1000;
                                     config.displayPercent = false;
-                                    var gauge = loadLiquidFillGauge("fillgauge1", 100, config);
+                                    var gauge = loadLiquidFillGauge("fillgauge1", index_heart_rate, config);
                                 </script>
                             </div>
                         </div>

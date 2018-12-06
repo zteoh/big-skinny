@@ -6,6 +6,11 @@
         <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/javascript.js"></script>
+        
+        <!-- Data Things -->
+        <script src="js/heart-data.js"></script>
+        <script src="js/steps-data.js"></script>
+        <script src="js/sleep-data.js"></script>
 
 
         <!-- Compiled and minified CSS -->
@@ -70,7 +75,7 @@
                                     config.textVertPosition = 0.2;
                                     config.waveAnimateTime = 1000;
                                     config.displayPercent = false;
-                                    var gauge = loadLiquidFillGauge("fillgauge1", 100, config);
+                                    var gauge = loadLiquidFillGauge("fillgauge1", today_heart, config);
                                 </script>
                             </div>
                         </div>
@@ -123,7 +128,7 @@
                                     config4.waveOffset = 0.25;
                                     config4.textSize = 0.75;
                                     config4.waveCount = 3;
-                                    var gauge = loadLiquidFillGauge("fillgauge3", 5500, config4);
+                                    var gauge = loadLiquidFillGauge("fillgauge3", today_step, config4);
                                 </script>
                             </div>
                         </div>
@@ -175,7 +180,7 @@
                                     config.circleThickness = 0.2;
                                     config.textVertPosition = 0.5;
                                     config.waveAnimateTime = 1000;
-                                    var gauge = loadLiquidFillGauge("fillgauge5", 7, config);
+                                    var gauge = loadLiquidFillGauge("fillgauge5", today_sleep, config);
                                 </script>
                             </div>
                         </div>
