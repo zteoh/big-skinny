@@ -16,6 +16,7 @@
         <script src="js/heart-data.js"></script>
         <script src="js/steps-data.js"></script>
         <script src="js/sleep-data.js"></script>
+        <script src="js/activity-data.js"></script>
 
 
         <!-- Compiled and minified CSS -->
@@ -182,7 +183,8 @@
                     <a href="index.html">
                         <div class="card">
                             <div class="card-content">
-                                <div class="card-title center">Nutrition</div>
+                                <div class="card-title center">
+                                    <h2>Nutrition</h2></div>
                                 <canvas id="food-chart" height="300px"></canvas>
                                 <script>
                                     var ctx = document.getElementById("food-chart").getContext("2d");
@@ -239,7 +241,7 @@
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(220,220,220,1)",
-                                                data: [6.5, 5.9, 8.0, 8.1, 5.6, 5.5, 4.0]
+                                                data: last_week_activity
                                             },
                                             {
                                                 label: "This Week",
@@ -249,7 +251,7 @@
                                                 pointStrokeColor: "#fff",
                                                 pointHighlightFill: "#fff",
                                                 pointHighlightStroke: "rgba(151,187,205,1)",
-                                                data: [2.8, 4.8, 4.0, 8.6, 8.6, 2.7, 9.0]
+                                                data: this_week_activity
                                             }
                                         ]
                                     };
