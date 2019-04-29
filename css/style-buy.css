@@ -231,3 +231,17 @@ fieldset:first-child{
 .form-wrapper input[type="radio"]:checked + label h4{
     color: #3498db;
 }
+
+.form-wrapper select {
+    display: inline;
+    height: 3em;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f1f1f1;
+    border: none;
+    width: 25%;
+    outline: none;
+    font-size: 14px !important;
+    color: grey;
+    font-family: 'Open Sans', sans-serif !important;
+}

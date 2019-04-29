@@ -192,13 +192,19 @@ table {
     vertical-align: top;
 }
 
+tr:not(:last-child) {
+    border-bottom: #a8d275 solid 1px;
+}
+
 th {
     font-weight: 500;
     color: #a8d275;
     height: 2em;
+    border-bottom: #a8d275 solid 2px;
 }
 
 td {
+    padding-top: 10px;
     vertical-align: top;
 }
 
